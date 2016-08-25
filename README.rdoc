@@ -3,15 +3,15 @@ For viewing purpose i have added an index.html.erb page that displays the data t
 
 Limitations: 
 
-1. The major issue while developing the application is the speed and performance of the local system. Each zipfile has a memory size of about 10mb and upon extracting, the zipfiles makeup to about 30mb of size. Since there are hundrends of zipfiles, practically it is impossible to run the application with all the zipfiles in the local environment. A possible alternative is that we can use a large server or a cloudbased server to deploy the application with all the zipfiles. 
+# The major issue while developing the application is the speed and performance of the local system. Each zipfile has a memory size of about 10mb and upon extracting, the zipfiles makeup to about 30mb of size. Since there are hundrends of zipfiles, practically it is impossible to run the application with all the zipfiles in the local environment. A possible alternative is that we can use a large server or a cloudbased server to deploy the application with all the zipfiles. 
 
-2. Another limitation is that, since their are many xml files and all have lot of data within them, the loading time would be huge(which is actually effecting my system's speed and performace currently). 
+# Another limitation is that, since their are many xml files and all have lot of data within them, the loading time would be huge(which is actually effecting my system's speed and performace currently). 
 
 So, for your code reviewing purpose i have just included url for one zipfile and limited the xml files that need to be read to 40(the zip file i included has 5532 xml files). 
 
 NOTE: If you want all the xml files to be read, you can remove the unless loop with in the news_controller.rb file.
 
-3. The final limitation is that, a redis list cannot be used if the application needs to have all unique values and no duplicates.
+# The final limitation is that, a redis list cannot be used if the application needs to have all unique values and no duplicates.
 So, i have used sets to implement this.
 
 Application Description: 
