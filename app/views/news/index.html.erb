@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Articles</title>
+	</head>
+	<body>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Text</th>
+        <th colspan="2"></th>
+      </tr>
+  
+      <% @hash.each do |arr| %>
+        <% arr.each_pair do |key, value| %>
+        <% i=0 %>
+          <% value.each_pair do |key1, value1| %>
+            <tr>
+            <td> <%= key1 %> </td>
+            <td> <%= value1 %> </td>
+            </tr>
+            <% i += 1 %>
+          <% end %>
+        <% end %>
+	   <% end %> 
+    </table>
+    <%= yield %>
+  </body>
+</html>
+

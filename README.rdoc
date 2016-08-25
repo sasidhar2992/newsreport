@@ -1,0 +1,32 @@
+The application extracts xml files from zip files and saves the data in a Redis “NEWS_XML” list. 
+For viewing purpose i have added an index.html.erb page that displays the data from xml files. A detailed step-by-step development of the application is described below.
+
+Limitations: 
+1. Downloading multiple files from the url couldn't be implemented. I have tried many ways possible to accomplish this task like trying to find appropriate gems, using net::http and open::uri. If the zip files had an individual url for each, it is much easier to download automatically using the application code.
+
+Hence, as an alternative i was able to retrieve the information of the url's html document and store in a textfile(file.txt) which will be created in the "/zipfolder" of the application once the app is run. This textfile will have the information of all the names of the zip files and their memory sizes. The application has code that accomplishes this tast(look url-inspect.rb file)
+
+2. Another limitation is that, since their are many xml files and all have lot of data within them, the loading time would take lot of time(which is actually effecting my system's speed and performace currently). 
+
+So, since it's for your code reviewing purpose i have just included one zip file(/zipfolder) and limited the xml files that need to be read to 40(the zip file i included has 4720 xml files). 
+
+NOTE: If you want all the xml files to be read, you can remove the unless loop with in the news_controller.rb file.
+
+3. The final limitation is that, a redis list cannot be used if the application needs to have all unique values and no duplicates.
+So, i have used sets to implement this.
+
+Application Description: 
+The application uses rubyzip gem for unzipping the zipfiles(zipfiles are stored in a folder called zipfolder located within the root location of the newsreport application) and storing in a xml files in a app/assets/xmls folder.
+
+The application also makes use of the nokogiri gem for parsing data from the xml files. Nokogiri is an HTML, XML, SAX, and Reader parser with XPath and CSS selector support.
+
+I have used a redis database for storing the data from the xml files. The main advantage of using a redis(NoSQL) here is that, it is many times faster than usual RDBMS databases which gives the application an advantage in performance and speed. I have stored the data in redis list called “NEWS_XML” upon extracting. For using the redis database the user need to download, install the db and start the redis-server within his local machine.
+
+NOTE: Created a namespace for redis($redis) sicne it's a good practice if you are using the db for multiple applications.
+A redis.db file was created with appropriate code within the config/initializer directory to achieve this functionality.
+
+For better viewing purpose i have created an index.html.erb file which displays all the newsreports in a html file.
+
+NOTE: The application is also idempotent. You can run the application multiple times to check if there are any duplicates that are being created. Both the Redis set(NEWS_XML) and XML files that are being unique even if the application is being run multiple times.
+
+Environments: Ruby 2.1, Rails 4+, Redis 3.0.
