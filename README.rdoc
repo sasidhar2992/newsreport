@@ -1,14 +1,13 @@
-The application extracts xml files from zip files and saves the data in a Redis “NEWS_XML” list. 
-For viewing purpose i have added an index.html.erb page that displays the data from xml files. A detailed step-by-step development of the application is described below.
+This application extracts xml files from zip files and saves the data in a Redis “NEWS_XML” set. 
+For viewing purpose i have added an index.html.erb page that displays the data that is extracted from the xml files. A detailed step-by-step development of the application is described below.
 
 Limitations: 
-1. Downloading multiple files from the url couldn't be implemented. I have tried many ways possible to accomplish this task like trying to find appropriate gems, using net::http and open::uri. If the zip files had an individual url for each, it is much easier to download automatically using the application code.
 
-Hence, as an alternative i was able to retrieve the information of the url's html document and store in a textfile(file.txt) which will be created in the "/zipfolder" of the application once the app is run. This textfile will have the information of all the names of the zip files and their memory sizes. The application has code that accomplishes this tast(look url-inspect.rb file)
+1. The major issue while developing the application is the speed and performance of the local system. Each zipfile has a memory size of about 10mb and upon extracting, the zipfiles makeup to about 30mb of size. Since there are hundrends of zipfiles, practically it is impossible to run the application with all the zipfiles in the local environment. A possible alternative is that we can use a large server or a cloudbased server to deploy the application with all the zipfiles. 
 
-2. Another limitation is that, since their are many xml files and all have lot of data within them, the loading time would take lot of time(which is actually effecting my system's speed and performace currently). 
+2. Another limitation is that, since their are many xml files and all have lot of data within them, the loading time would be huge(which is actually effecting my system's speed and performace currently). 
 
-So, since it's for your code reviewing purpose i have just included one zip file(/zipfolder) and limited the xml files that need to be read to 40(the zip file i included has 4720 xml files). 
+So, for your code reviewing purpose i have just included url for one zipfile and limited the xml files that need to be read to 40(the zip file i included has 5532 xml files). 
 
 NOTE: If you want all the xml files to be read, you can remove the unless loop with in the news_controller.rb file.
 
@@ -16,11 +15,29 @@ NOTE: If you want all the xml files to be read, you can remove the unless loop w
 So, i have used sets to implement this.
 
 Application Description: 
-The application uses rubyzip gem for unzipping the zipfiles(zipfiles are stored in a folder called zipfolder located within the root location of the newsreport application) and storing in a xml files in a app/assets/xmls folder.
+
+Firstly, i have used a httparty gem to get the data from a particular zip file based on url.
+
+Since, i am running the application in a local environment, getting the data from all the zipfiles and extract many xml files is highly difficult and time taking. So, i have used just one zipfile for now. 
+
+A possible way to get data from all the zipfiles is:
+
+(i) #generating a txt file with all the names of the zipfiles init(i have created this file by extracting the data from the url html document) --- refer to /zipfolder/file1.txt.
+
+(ii) #implementing a regex functionality to retrieve all the zipfile names from the 'file.txt' and store them in a new array.
+
+(iii) #Iterate through the array of zipfile names and use a string interpolation technique to place each zipfile name within the url.
+	Ex: zipfile = Tempfile.new("file")
+  		zipfile.binmode
+  		zipfile.write(HTTParty.get("http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/#{variablename}.zip").body)
+  		zipfile.close
+NOTE: This idea can be implemented when using a large server or a cloudserver with large data.
+
+Then have used rubyzip gem for unzipping the zipfile and storing in a xml files in a app/assets/xmls folder.(Getting the zipfile data and unzipping it is done directly without the zipfile being downloaded).
 
 The application also makes use of the nokogiri gem for parsing data from the xml files. Nokogiri is an HTML, XML, SAX, and Reader parser with XPath and CSS selector support.
 
-I have used a redis database for storing the data from the xml files. The main advantage of using a redis(NoSQL) here is that, it is many times faster than usual RDBMS databases which gives the application an advantage in performance and speed. I have stored the data in redis list called “NEWS_XML” upon extracting. For using the redis database the user need to download, install the db and start the redis-server within his local machine.
+I have used a redis database for storing the data from the xml files. The main advantage of using a redis(NoSQL) here is that, it is many times faster than usual RDBMS databases which gives the application an advantage in performance and speed. I have stored the data in redis set called “NEWS_XML” upon extracting. For using the redis database the user need to download, install the db and start the redis-server within his local machine.
 
 NOTE: Created a namespace for redis($redis) sicne it's a good practice if you are using the db for multiple applications.
 A redis.db file was created with appropriate code within the config/initializer directory to achieve this functionality.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<type>mainstream</type>
+<forum>http://www.pro-linux.de/rss/index2.xml</forum>
+<forum_title>Pro-Linux News</forum_title>
+<discussion_title>Systemd integriert »systemd-mount«</discussion_title>
+<language>german</language>
+<gmt_offset></gmt_offset>
+<topic_url>http://www.pro-linux.de/news/1/23882/systemd-integriert-systemd-mount.html</topic_url>
+<topic_text>
+  08:02 Software::Systemverwaltung Systemd integriert »systemd-mount« 
+Das Systemd-Projekt hat eine neue Mount-Infrastruktur unter dem Namen »systemd-mount« vorgestellt. Die neue Lösung soll die Erstellung von Mount-Units erleichtern und unter anderem die Einbindung von Automount-Geräten vereinfachen. Von Mirko Lindner Mirko Lindner Systemd ist ein Daemon für Linux-Systeme, der als init-Prozess als erster Prozess zum Starten, Überwachen und Beenden weiterer Prozesse dient. Das System wurde von Lennart Poettering und Kay Sievers initiiert und findet mittlerweile einen breiten Einsatz in vielen Distributionen. Mit der Zeit wuchs allerdings auch der Funktionsumfang des Systems, sodass Systemd mittlerweile zahlreiche, zuvor separat vorhandene Dienste und Anwendungen in sich vereinnahmt. So beinhaltet die Lösung unter anderem eine komplette Event-Verarbeitungsschleife, Logdateienbehandlung und Geräteüberwachung.
+Geht es nach dem Willen der Entwickler, so wird Systemd künftig auch das Einhängen von Geräten vereinfachen. Mittels des neuen Mount-Tools lassen sich künftig Geräte leichter in Units einbinden und verwalten. So erlaubt das neue Kommando »systemd-mount« im Gegensatz zum traditionellen »mount« auch die zeitverzögerte Ausführung der Operation. Wie der Beschreibung der neuen Funktion entnommen werden kann, wird die Operation dann nicht direkt ausgeführt, sondern in eine Service-Manager-Queue eingeplant, so dass Systemd beispielsweise weitere Abhängigkeiten auflösen kann. 
+Die neue Funktion wurde am Wochenende in das offizielle Repositorium des Systems aufgenommen und wird aller Voraussicht nach ein fester Bestandteil der kommenden Version von Systemd.
+</topic_text>
+<spam_score>0.00</spam_score>
+<post_num>1</post_num>
+<post_id>post-1</post_id>
+<post_url>http://www.pro-linux.de/news/1/23882/systemd-integriert-systemd-mount.html</post_url>
+<post_date>20160822</post_date>
+<post_time>0602</post_time>
+<username></username>
+<post>
+  08:02 Software::Systemverwaltung Systemd integriert »systemd-mount« 
+Das Systemd-Projekt hat eine neue Mount-Infrastruktur unter dem Namen »systemd-mount« vorgestellt. Die neue Lösung soll die Erstellung von Mount-Units erleichtern und unter anderem die Einbindung von Automount-Geräten vereinfachen. Von Mirko Lindner Mirko Lindner Systemd ist ein Daemon für Linux-Systeme, der als init-Prozess als erster Prozess zum Starten, Überwachen und Beenden weiterer Prozesse dient. Das System wurde von Lennart Poettering und Kay Sievers initiiert und findet mittlerweile einen breiten Einsatz in vielen Distributionen. Mit der Zeit wuchs allerdings auch der Funktionsumfang des Systems, sodass Systemd mittlerweile zahlreiche, zuvor separat vorhandene Dienste und Anwendungen in sich vereinnahmt. So beinhaltet die Lösung unter anderem eine komplette Event-Verarbeitungsschleife, Logdateienbehandlung und Geräteüberwachung.
+Geht es nach dem Willen der Entwickler, so wird Systemd künftig auch das Einhängen von Geräten vereinfachen. Mittels des neuen Mount-Tools lassen sich künftig Geräte leichter in Units einbinden und verwalten. So erlaubt das neue Kommando »systemd-mount« im Gegensatz zum traditionellen »mount« auch die zeitverzögerte Ausführung der Operation. Wie der Beschreibung der neuen Funktion entnommen werden kann, wird die Operation dann nicht direkt ausgeführt, sondern in eine Service-Manager-Queue eingeplant, so dass Systemd beispielsweise weitere Abhängigkeiten auflösen kann. 
+Die neue Funktion wurde am Wochenende in das offizielle Repositorium des Systems aufgenommen und wird aller Voraussicht nach ein fester Bestandteil der kommenden Version von Systemd.
+</post>
+<signature>
+
+</signature>
+<external_links>
+
+</external_links>
+<country>DE</country>
+<main_image>http://www.pro-linux.de/images/NB3/imgdb/o_opensource.jpg</main_image>
+</document>

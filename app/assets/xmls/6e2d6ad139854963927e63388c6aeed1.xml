@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<type>mainstream</type>
+<forum>http://www.hwupgrade.it/rss_hwup.xml</forum>
+<forum_title>Le news di Hardware Upgrade</forum_title>
+<discussion_title>Windows 10 Anniversary Update, problemi con le webcam. Fix provvisorio</discussion_title>
+<language>italian</language>
+<gmt_offset></gmt_offset>
+<topic_url>http://www.hwupgrade.it/news/sistemi-operativi/windows-10-anniversary-update-problemi-con-le-webcam-fix-provvisorio_64084.html</topic_url>
+<topic_text>
+pubblicata il , alle 09:45 nel canale Sistemi Operativi Microsoft 
+à e miglioramenti introdotti, ha creato alcuni problemi di compatibilità con numerose webcam . Le prime segnalazioni a riguardo sono state diffuse poco dopo il rilascio dell&apos;aggiornamento, ma, negli ultimi giorni , l&apos;attenzione dei media è tornata a concentrarsi sul problema, anche alla luce degli interventi ufficiali di Microsoft e della pubblicazione di una fix provvisorio, non ufficiale, in attesa di quello definitivo che la casa di Redmond renderà disponibile a partire da settembre. 
+Il problema 
+è topic del Windows Dev Center e determina in particolar modo, blocchi delle video chiamate Skype nei PC in cui è installato l&apos;aggiornamento , un problema riscontrato da numerosi utenti enterprise. 
+Mike M, del team Camera di Microsoft, ha chiarito quali sono le origini del problema, riconducibili, alla rimozione del supporto all&apos;encoding MJPEG e H264 per le webcam USB dopo l&apos;aggiornamento - a causa delle modalità con cui le app hanno accesso alla fotocamera - consentendo solo l&apos;encoding YUY2. C on l&apos;Anniversary Update di Windows 10 è ora possibile per molte applicazioni accedere alla fotocamera in modi che non erano possibili in precedenza, sottolinea Microsoft. L&apos;enconding MJPEG e H264 sono stati ritenuti responsabile di problemi sotto il profilo delle prestazioni e interferenze con le nuove funzionalità di Windows 10 Anniversary Update. 
+Microsoft ha confermato di essere al lavoro ad un fix per i problemi con l&apos;encoding MJPEG e H264: la patch MJPEG sar rilasciata nel mese di settembre , mentre l&apos; aggiornamento per l&apos;encoding H264 verrà reso disponibile successivamnete. 
+La soluzione provvisoria (non ufficiale) 
+Rafael Rivera Windows + R Digitare regedit OK HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation\Platform Cliccare con il tasto destro del mouse nella sezione della UI, selezionare Nuovo e su DWORD (32-bit) Nominare la nuova chiave come EnableFrameServerMod e OK Doppio click sulla chiave appena creata ed assicurarsi che il valore sia Cliccare su OK e più o meno gravi. Della modifica apportata, inoltre, si dovrà tener presente non appena Microsofr rilascerà le patch ufficiali. Come ogni soluzione non ufficiale non è detto che sia in grado di risolver il problema con ogni webcam e con ogni PC che ne è affetto.
+</topic_text>
+<spam_score>0.00</spam_score>
+<post_num>1</post_num>
+<post_id>post-1</post_id>
+<post_url>http://www.hwupgrade.it/news/sistemi-operativi/windows-10-anniversary-update-problemi-con-le-webcam-fix-provvisorio_64084.html</post_url>
+<post_date>20160822</post_date>
+<post_time>0745</post_time>
+<username></username>
+<post>
+pubblicata il , alle 09:45 nel canale Sistemi Operativi Microsoft 
+à e miglioramenti introdotti, ha creato alcuni problemi di compatibilità con numerose webcam . Le prime segnalazioni a riguardo sono state diffuse poco dopo il rilascio dell&apos;aggiornamento, ma, negli ultimi giorni , l&apos;attenzione dei media è tornata a concentrarsi sul problema, anche alla luce degli interventi ufficiali di Microsoft e della pubblicazione di una fix provvisorio, non ufficiale, in attesa di quello definitivo che la casa di Redmond renderà disponibile a partire da settembre. 
+Il problema 
+è topic del Windows Dev Center e determina in particolar modo, blocchi delle video chiamate Skype nei PC in cui è installato l&apos;aggiornamento , un problema riscontrato da numerosi utenti enterprise. 
+Mike M, del team Camera di Microsoft, ha chiarito quali sono le origini del problema, riconducibili, alla rimozione del supporto all&apos;encoding MJPEG e H264 per le webcam USB dopo l&apos;aggiornamento - a causa delle modalità con cui le app hanno accesso alla fotocamera - consentendo solo l&apos;encoding YUY2. C on l&apos;Anniversary Update di Windows 10 è ora possibile per molte applicazioni accedere alla fotocamera in modi che non erano possibili in precedenza, sottolinea Microsoft. L&apos;enconding MJPEG e H264 sono stati ritenuti responsabile di problemi sotto il profilo delle prestazioni e interferenze con le nuove funzionalità di Windows 10 Anniversary Update. 
+Microsoft ha confermato di essere al lavoro ad un fix per i problemi con l&apos;encoding MJPEG e H264: la patch MJPEG sar rilasciata nel mese di settembre , mentre l&apos; aggiornamento per l&apos;encoding H264 verrà reso disponibile successivamnete. 
+La soluzione provvisoria (non ufficiale) 
+Rafael Rivera Windows + R Digitare regedit OK HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation\Platform Cliccare con il tasto destro del mouse nella sezione della UI, selezionare Nuovo e su DWORD (32-bit) Nominare la nuova chiave come EnableFrameServerMod e OK Doppio click sulla chiave appena creata ed assicurarsi che il valore sia Cliccare su OK e più o meno gravi. Della modifica apportata, inoltre, si dovrà tener presente non appena Microsofr rilascerà le patch ufficiali. Come ogni soluzione non ufficiale non è detto che sia in grado di risolver il problema con ogni webcam e con ogni PC che ne è affetto.
+</post>
+<signature>
+
+</signature>
+<external_links>
+
+</external_links>
+<country>IT</country>
+<main_image>http://www.hwupgrade.it/i/n/surface_pro_3_600_01.jpg</main_image>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<type>mainstream</type>
+<forum>http://www.theregister.co.uk/headlines.atom</forum>
+<forum_title>The Register</forum_title>
+<discussion_title>Google killing app format that only the one per cent used</discussion_title>
+<language>english</language>
+<gmt_offset></gmt_offset>
+<topic_url>http://www.theregister.co.uk/2016/08/22/google_killing_app_format_that_only_the_one_per_cent_used/</topic_url>
+<topic_text>
+Chalk up another fail for Google, which has decided it&apos;s time to do away with Chrome apps on Windows, Mac OS and Linux.
+Chrome what? “Chrome packaged apps”, dear reader, an effort Google launched back in 2013 and suggested could offer a great way to package apps for multiple operating systems that launched from within Chrome but looked and felt like conventional apps while running. Google&apos;s idea was that developers would use Chrome as one target, pop their apps in the Chrome Web Store and then sit back and enjoy the chance to have their apps run on multiple platforms.
+That idea failed. As the death notice for the format reads, “Today, approximately 1% of users on Windows, Mac and Linux actively use Chrome packaged apps, and most hosted apps are already implemented as regular web apps.”
+Google also says technology moved on, making it easier to build apps that run in multiple browsers, leaving its packaged apps a bit of an anachronism.
+Here&apos;s what happens next:
+Starting in late 2016, newly-published Chrome apps will only be available to users on Chrome OS. Existing Chrome apps will remain accessible on all platforms, and developers can continue to update them. In the second half of 2017, the Chrome Web Store will no longer show Chrome apps on Windows, Mac, and Linux, but will continue to surface extensions and themes. In early 2018, users on these platforms will no longer be able to load Chrome apps.
+If you developed a packaged app, Google reckons you should port it to the web. Which was, and is, surely the best place to start developing almost anything these days? ®
+ 
+</topic_text>
+<spam_score>0.00</spam_score>
+<post_num>2</post_num>
+<post_id>post-2</post_id>
+<post_url>http://www.theregister.co.uk/2016/08/22/google_killing_app_format_that_only_the_one_per_cent_used/</post_url>
+<post_date>20160822</post_date>
+<post_time></post_time>
+<username>Lost all faith...</username>
+<post>
+Oh.... ..is that what the button in Iron is for.
+Meh.
+</post>
+<signature>
+
+</signature>
+<external_links>
+
+</external_links>
+<country>GB</country>
+<main_image>https://regmedia.co.uk/2016/03/23/shutterstock_complainers_next_exit.jpg?x=1200&amp;y=794</main_image>
+</document>

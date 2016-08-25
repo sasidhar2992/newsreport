@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<type>mainstream</type>
+<forum>http://www.cnx-software.com/feed/</forum>
+<forum_title>CNXSoft – Embedded Systems News</forum_title>
+<discussion_title>Learn the Basics of Humanoid Robots with InMoov Finger Starter Kit</discussion_title>
+<language>english</language>
+<gmt_offset></gmt_offset>
+<topic_url>http://www.cnx-software.com/2016/08/22/learn-the-basics-of-humanoid-robots-with-inmoov-finger-starter-kit/</topic_url>
+<topic_text>
+Home &gt; Atmel AVR , Hardware , Video &gt; Learn the Basics of Humanoid Robots with InMoov Finger Starter Kit Learn the Basics of Humanoid Robots with InMoov Finger Starter Kit Tweet 
+In a not so distant future, most humans will live off their government provided basic income, relaxing and drinking their robot brewed, drone delivered beer or soda, opened and served by their humanoid robot maid. Well, maybe… In the meantime, it might be interesting to learn how to make humanoid robots such as InMoov , but since it’s quite complicated, it might be better to start small… with a single finger. 
+That’s exactly what InMoov Finger Starter Kit offers you to do in order to understand the basics principles of the complete robot. The kit includes: 1x 3D printed base support in ABS 3D printed finger parts in ABS 1 meter braided 200 LB tendon 1x 5cm filament for peg/pin use to assemble finger joints 1x wheel horn adapter (Servo Pulley) 4x screws to fix the servo to the base support. 
+You’ll also need to provide your own Arduino Uno (or Leonardo or Duelaminove..) board, and servo such as HK15298 or the cheaper MG995 . More details and assembly instructions are explained on the kit’s tutorial page . Once assembly is complete, you can run a simple sketch to see the finger moving, or a more advanced one to control it with your voice. It can also be interfaced with muscle or ultrasound sensors. 
+If you already own a 3D printer, you could also print them yourself . Once you can confident enough, you could move to the next stage, and build the complete InMoov open source robot shown in the video below. The starter kit was actually showcased in 2013, but I’ve only come across the kit via Tindie, where it is sold for $37 . You can also buy it directly from InMoov website for 34 Euros .
+</topic_text>
+<spam_score>0.00</spam_score>
+<post_num>1</post_num>
+<post_id>post-1</post_id>
+<post_url>http://www.cnx-software.com/2016/08/22/learn-the-basics-of-humanoid-robots-with-inmoov-finger-starter-kit/</post_url>
+<post_date>20160822</post_date>
+<post_time>0802</post_time>
+<username>cnxsoft</username>
+<post>
+Home &gt; Atmel AVR , Hardware , Video &gt; Learn the Basics of Humanoid Robots with InMoov Finger Starter Kit Learn the Basics of Humanoid Robots with InMoov Finger Starter Kit Tweet 
+In a not so distant future, most humans will live off their government provided basic income, relaxing and drinking their robot brewed, drone delivered beer or soda, opened and served by their humanoid robot maid. Well, maybe… In the meantime, it might be interesting to learn how to make humanoid robots such as InMoov , but since it’s quite complicated, it might be better to start small… with a single finger. 
+That’s exactly what InMoov Finger Starter Kit offers you to do in order to understand the basics principles of the complete robot. The kit includes: 1x 3D printed base support in ABS 3D printed finger parts in ABS 1 meter braided 200 LB tendon 1x 5cm filament for peg/pin use to assemble finger joints 1x wheel horn adapter (Servo Pulley) 4x screws to fix the servo to the base support. 
+You’ll also need to provide your own Arduino Uno (or Leonardo or Duelaminove..) board, and servo such as HK15298 or the cheaper MG995 . More details and assembly instructions are explained on the kit’s tutorial page . Once assembly is complete, you can run a simple sketch to see the finger moving, or a more advanced one to control it with your voice. It can also be interfaced with muscle or ultrasound sensors. 
+If you already own a 3D printer, you could also print them yourself . Once you can confident enough, you could move to the next stage, and build the complete InMoov open source robot shown in the video below. The starter kit was actually showcased in 2013, but I’ve only come across the kit via Tindie, where it is sold for $37 . You can also buy it directly from InMoov website for 34 Euros .
+</post>
+<signature>
+
+</signature>
+<external_links>
+
+</external_links>
+<country>US</country>
+<main_image></main_image>
+</document>
