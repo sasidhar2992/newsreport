@@ -28,10 +28,11 @@ A possible way to get data from all the zipfiles is:
 
 (iii) #Iterate through the array of zipfile names and use a string interpolation technique to place each zipfile name within the url.
 	Ex: 
-		zipfile = Tempfile.new("file")
-  		zipfile.binmode
-  		zipfile.write(HTTParty.get("http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/#{variablename}.zip").body)
-  		zipfile.close
+	
+	zipfile = Tempfile.new("file")
+  	zipfile.binmode
+  	zipfile.write(HTTParty.get("http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/#{variablename}.zip").body)
+  	zipfile.close
 NOTE: This idea can be implemented when using a large server or a cloudserver with large data.
 
 Then have used rubyzip gem for unzipping the zipfile and storing in a xml files in a app/assets/xmls folder.(Getting the zipfile data and unzipping it is done directly without the zipfile being downloaded).
