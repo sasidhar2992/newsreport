@@ -27,7 +27,8 @@ A possible way to get data from all the zipfiles is:
 (ii) #implementing a regex functionality to retrieve all the zipfile names from the 'file.txt' and store them in a new array.
 
 (iii) #Iterate through the array of zipfile names and use a string interpolation technique to place each zipfile name within the url.
-	Ex: zipfile = Tempfile.new("file")
+	Ex: 
+		zipfile = Tempfile.new("file")
   		zipfile.binmode
   		zipfile.write(HTTParty.get("http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/#{variablename}.zip").body)
   		zipfile.close
